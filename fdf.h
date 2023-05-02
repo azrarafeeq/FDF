@@ -6,7 +6,7 @@
 /*   By: arafeeq <arafeeq@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 12:57:24 by arafeeq           #+#    #+#             */
-/*   Updated: 2023/02/06 16:45:28 by arafeeq          ###   ########.fr       */
+/*   Updated: 2023/04/30 14:32:11 by arafeeq          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 # include <math.h>
 # include <sys/types.h>
 # include <sys/uio.h>
-# include <fcntl.h>
 
 # include "./minilibx/mlx.h"
 # include "./libft/libft.h"

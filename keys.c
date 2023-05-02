@@ -6,7 +6,7 @@
 /*   By: arafeeq <arafeeq@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/28 19:13:41 by arafeeq           #+#    #+#             */
-/*   Updated: 2023/02/04 15:13:51 by arafeeq          ###   ########.fr       */
+/*   Updated: 2023/05/02 12:46:48 by arafeeq          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,9 @@ void	assign_keys_projection(int keycode, t_fdf **fdf)
 void	assign_keys_angles(int keycode, t_fdf **fdf)
 {
 	if (keycode == 13)
-		(*fdf)->alpha += 0.5;
+		(*fdf)->alpha += 5;
 	else if (keycode == 1)
-		(*fdf)->alpha -= 0.5;
+		(*fdf)->alpha -= 5;
 	else if (keycode == 0)
 		(*fdf)->beta -= 0.5;
 	else if (keycode == 2)

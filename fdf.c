@@ -6,7 +6,7 @@
 /*   By: arafeeq <arafeeq@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 12:57:14 by arafeeq           #+#    #+#             */
-/*   Updated: 2023/02/06 16:44:55 by arafeeq          ###   ########.fr       */
+/*   Updated: 2023/05/02 12:52:47 by arafeeq          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ int	main(int argc, char **argv)
 	f->i->i = mlx_new_image(f->mlx, f->win_width, f->win_length);
 	f->i->addr = mlx_get_data_addr(f->i->i, &f->i->bpp, &f->i->l_len, &f->i->e);
 	draw(&f);
-	mlx_key_hook(f->win, key_hook, &f);
+	mlx_hook(f->win, 2, 1L >> 1, key_hook, &f);
 	mlx_hook(f->win, ON_DESTROY, 1L << 1, mouse_hook, &f);
 	mlx_put_image_to_window(f->mlx, f->win, f->i->i, 0, 0);
 	put_str_to_win(&f);
